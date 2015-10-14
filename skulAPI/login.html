@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="css/mdl.css" rel="stylesheet" />
+    <script src="js/mdl.js"></script>
+</head>
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header" style="z-index:0;height:300px;">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Login</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                    <a class="mdl-navigation__link" href="">Link</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <main class="mdl-layout__content" style="width:100%;">
+        <div class="page-content" style="margin: 0 auto;width:100%">
+
+            <style>
+                .demo-card-square.mdl-card {
+                    width: 400px;
+                    height: 450px;
+                }
+            </style>
+
+            <div class="demo-card-square mdl-card mdl-shadow--2dp" style="margin: 0 auto;float:none;margin-top:100px">
+                <div class="mdl-card__supporting-text">
+                    <h4>I am a...</h4>
+                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                        <div class="mdl-tabs__tab-bar">
+                            <a href="#starks-panel" class="mdl-tabs__tab is-active">Student</a>
+                            <a href="#lannisters-panel" class="mdl-tabs__tab">Parent</a>
+                            <a href="#targaryens-panel" class="mdl-tabs__tab">Teacher</a>
+                        </div>
+                        <div class="mdl-tabs__panel is-active" id="starks-panel" style="margin-top:20px">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="u1" />
+                                <label class="mdl-textfield__label" for="u1">Email...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:20px;margin-bottom:20px">
+                                <input class="mdl-textfield__input" type="text" id="p1" />
+                                <label class="mdl-textfield__label" for="p1">Password...</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="width:100%">
+                                Log In
+                            </button>
+                        </div>
+                        <div class="mdl-tabs__panel" id="lannisters-panel" style="margin-top:20px">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="u1" />
+                                <label class="mdl-textfield__label" for="u1">Email...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:20px;margin-bottom:20px">
+                                <input class="mdl-textfield__input" type="text" id="p1" />
+                                <label class="mdl-textfield__label" for="p1">Password...</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="width:100%">
+                                Log In
+                            </button>
+                        </div>
+                        <div class="mdl-tabs__panel" id="targaryens-panel" style="margin-top:20px">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="u1" />
+                                <label class="mdl-textfield__label" for="u1">Email...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin-top:20px;margin-bottom:20px">
+                                <input class="mdl-textfield__input" type="text" id="p1" />
+                                <label class="mdl-textfield__label" for="p1">Password...</label>
+                            </div>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" style="width:100%">
+                                Log In
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

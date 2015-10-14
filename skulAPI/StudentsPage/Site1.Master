@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="skulAPI.StudentsPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="../js/jq.js"></script>
+    <link href="../css/mdl.css" rel="stylesheet" />
+    <script src="../js/mdl.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style></style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--scroll" style="height: 300px;">
+                <div class="mdl-layout__header-row">
+                    <!-- Title -->
+                    <span class="mdl-layout-title" runat="server" id="stuName">Name</span>
+                </div>
+                <div class="mdl-layout__header-row"><div class="mdl-layout-spacer"></div><div class="student_data" id="class_" runat="server">Class</div></div>
+                <div class="mdl-layout__header-row"><div class="mdl-layout-spacer"></div><div class="student_data" id="roll" runat="server">Roll No.</div></div>
+                <div class="mdl-layout__header-row"><div class="mdl-layout-spacer"></div><div class="student_data" id="school" runat="server">School</div></div>
+            </header>
+            <%--<div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Title</span>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="attendance.aspx">&nbsp;</a>
+                </nav>
+            </div>--%>
+            <main class="mdl-layout__content" style="margin-top: -85px; z-index: 3">
+                <div class="page-content" style="padding: 20px;">
+                    <asp:ContentPlaceHolder ID="body" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </main>
+        </div>
+    </form>
+</body>
+</html>
